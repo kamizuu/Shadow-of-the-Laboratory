@@ -18,20 +18,20 @@ func _process( _delta ):
 <<<<<<< Updated upstream
 	velocity = direction * move_speed
 =======
-    velocity = direction * move_speed
+	velocity = direction * move_speed
 
-    if direction != Vector2.ZERO:
-        if abs(direction.x) > abs(direction.y):
-            if direction.x > 0:
-                $AnimatedSprite2D.animation = "look right"
-            else:
-                $AnimatedSprite2D.animation = "look left"
-        else:
-            if direction.y > 0:
-                $AnimatedSprite2D.animation = "look down"
-            else:
-                $AnimatedSprite2D.animation = "look up"
-    
+	if direction != Vector2.ZERO:
+		if abs(direction.x) > abs(direction.y):
+			if direction.x > 0:
+				$AnimatedSprite2D.animation = "look right"
+			else:
+				$AnimatedSprite2D.animation = "look left"
+		else:
+			if direction.y > 0:
+				$AnimatedSprite2D.animation = "look down"
+			else:
+				$AnimatedSprite2D.animation = "look up"
+	
 >>>>>>> Stashed changes
 
 	pass
@@ -41,6 +41,6 @@ func _physics_process( _delta ):
 <<<<<<< Updated upstream
 	move_and_slide()
 =======
-    move_and_slide()
-    
+	move_and_slide()
+	
 >>>>>>> Stashed changes

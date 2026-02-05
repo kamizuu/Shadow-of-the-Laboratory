@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gcybis1f1poo"
-path="res://.godot/imported/look up.png-fab1bf989e5cb32ab2f3c6dd1b56a430.ctex"
+uid="uid://yitmgw0xd4ao"
+path="res://.godot/imported/look right.png-51fb137dae7411880e8e653310828ddc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/placeholders/look up.png"
-dest_files=["res://.godot/imported/look up.png-fab1bf989e5cb32ab2f3c6dd1b56a430.ctex"]
+source_file="res://assets/placeholders/player/look/look right.png"
+dest_files=["res://.godot/imported/look right.png-51fb137dae7411880e8e653310828ddc.ctex"]
 
 [params]
 
