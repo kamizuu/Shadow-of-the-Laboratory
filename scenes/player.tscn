@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2oxpme4ncyyr"]
+[gd_scene load_steps=6 format=3 uid="uid://c2oxpme4ncyyr"]
 
 [ext_resource type="Texture2D" uid="uid://csu8slk3wk7yc" path="res://assets/placeholders/normal.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://c4jwd6lqqfwtn" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://gcybis1f1poo" path="res://assets/placeholders/look up.png" id="3_qhqgy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g2els"]
 animations = [{
@@ -11,6 +12,14 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qhqgy")
+}],
+"loop": true,
+"name": &"look up",
 "speed": 5.0
 }]
 
@@ -24,7 +33,7 @@ script = ExtResource("1_g2els")
 position = Vector2(7.6293945e-06, -7.1054274e-15)
 scale = Vector2(0.315, 0.315)
 sprite_frames = SubResource("SpriteFrames_g2els")
-animation = &"idle"
+animation = &"look up"
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_qhqgy")
