@@ -16,41 +16,10 @@ func _process( _delta ):
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-	velocity = direction * move_speed
-=======
+
 	velocity = direction * move_speed
 
 	if direction != Vector2.ZERO:
-		if abs(direction.x) > abs(direction.y):
-			if direction.x > 0:
-				$AnimatedSprite2D.animation = "look right"
-			else:
-				$AnimatedSprite2D.animation = "look left"
-		else:
-			if direction.y > 0:
-				$AnimatedSprite2D.animation = "look down"
-			else:
-				$AnimatedSprite2D.animation = "look up"
-	
->>>>>>> Stashed changes
-
-	pass
-
-
-func _physics_process( _delta ):
-<<<<<<< Updated upstream
-	move_and_slide()
-=======
-	move_and_slide()
-	
->>>>>>> Stashed changes
-=======
-
-	velocity = direction * move_speed
-
-	if direction != Vector2.ZERO:	
 		if direction.x > 0 and direction.y < 0:
 			last_anim = "look up right"
 		elif direction.x < 0 and direction.y < 0:
@@ -69,13 +38,13 @@ func _physics_process( _delta ):
 			last_anim = "look up"
 		anim_sprite.animation = last_anim
 		anim_sprite.play()
+	elif (last_anim.ends_with("up right") or last_anim.ends_with("up left") or last_anim.ends_with("down left") or last_anim.ends_with("down right")):
+		anim_sprite.animation = "look up"
+		anim_sprite.play()
 	else:
 		anim_sprite.animation = last_anim.replace("look", "idle")
 		anim_sprite.play()
 
 
 func _physics_process( _delta ):
-
 	move_and_slide()
-	
->>>>>>> Stashed changes
